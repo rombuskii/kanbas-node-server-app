@@ -1,4 +1,4 @@
-[
+export const links = [
     {"name": "Account", "icon": "user", "border": true},
     {"name": "Dashboard", "icon": "gauge", "border": false},
     {"name": "Courses", "icon": "book", "border": false},

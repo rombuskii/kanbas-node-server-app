@@ -1,4 +1,4 @@
-[
+export const assignments = [
     { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101", "due": "Sep 18 at 11:59pm" },
     { "_id": "A102", "title": "Combustion Analysis", "course": "RS101", "due": "Oct 2 at 11:59pm" },
     { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101", "due": "Oct 16 at 11:59pm" },
