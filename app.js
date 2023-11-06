@@ -5,12 +5,11 @@ import CourseRoutes from "./courses/routes.js";
 import Lab5 from './Lab5.js'
 import ModuleRoutes from "./modules/routes.js";
 import cors from "cors";
-
 const app = express()
 app.use(express.json());
 app.use(cors({
     credentials: true,
-    origin: [process.env.FRONTEND_URL, process.env.PRODUCTION_URL]
+    origin: '*'
 }));
 ModuleRoutes(app);
 CourseRoutes(app);
