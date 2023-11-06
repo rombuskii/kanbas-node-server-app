@@ -26,10 +26,14 @@ function CourseRoutes(app) {
   app.put("/api/courses/:id", (req, res) => {
     const { id } = req.params;
     const course = req.body;
-    Database.courses = Database.courses.map((c) =>
-      c._id === id ? { c, ...course } : c
-    );
-    res.sendStatus(204);
+    Database.courses = Database.courses.map((c) => {
+      if(c._id === id) {
+        return course;
+      } else {
+        return c;
+      }
+  })
+    res.send(course);
   });
   app.get("/api/courses", (req, res) => {
     const courses = Database.courses;
