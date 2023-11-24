@@ -14,7 +14,7 @@ const app = express()
 app.use(express.json());
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL, 'https://a5--amazing-kringle-52acd5.netlify.app'],
 }));
 const sessionOptions = {
     secret: "any string",
